@@ -2,7 +2,7 @@
 
 ## A modern approach for a lightweight yet efficient CMS
 
-### Based on work from ahumaro adapting for unraid.
+### Based on work from Ahumaro Mendoza <ahumaro@ahumaro.com> adapting for unraid.
 ### At a glance
 
 This aproach for a lightweight Content Management System stack includes four main parts:
