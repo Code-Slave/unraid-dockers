@@ -1,6 +1,6 @@
 FROM phusion/baseimage:0.9.19
 
-MAINTAINER Ahumaro Mendoza <ahumaro@ahumaro.com>
+MAINTAINER Sam Mayes <home@mayes.net>
 
 CMD ["/sbin/my_init"]
 
