@@ -2,8 +2,9 @@
 # sure you lock down to a specific version, not to `latest`!
 # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
 # a list of version numbers.
+# based on original work by Zuhkov <zuhkov@gmail.com>
 FROM phusion/baseimage:0.9.16
-MAINTAINER Zuhkov <zuhkov@gmail.com>
+MAINTAINER  CodeSlave <codeslave@gmail.com>
 
 # Set correct environment variables.
 ENV HOME /root
@@ -62,7 +63,7 @@ RUN chmod +x /etc/service/php5-fpm/run && \
     chmod +x /etc/service/nginx/run
 
 # Wallabag version
-ENV WALLABAG_VERSION 1.9
+ENV WALLABAG_VERSION 2.2.3
 
 # Extract wallabag code
 ADD https://github.com/wallabag/wallabag/archive/$WALLABAG_VERSION.zip /tmp/wallabag-$WALLABAG_VERSION.zip
