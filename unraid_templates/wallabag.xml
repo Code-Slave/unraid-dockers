@@ -35,7 +35,7 @@
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir>/mnt/user/appdata/wallabag/config</HostDir>
+            <HostDir>/mnt/user/appdata/wallabag/app/config</HostDir>
             <ContainerDir>/config</ContainerDir>
             <Mode>rw</Mode>
         </Volume>

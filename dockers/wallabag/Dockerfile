@@ -71,7 +71,7 @@ RUN set -ex \
  && SYMFONY_ENV=prod composer install --no-dev -o --prefer-dist \
  && chown -R nobody:users /var/www/wallabag
 
-VOLUME ["/var/www/wallabag/data/db","/config"]
+VOLUME ["/var/www/wallabag/app/config","/config"]
 EXPOSE 80
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["wallabag"]
