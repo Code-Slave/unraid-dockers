@@ -6,7 +6,7 @@ This was forked from bobmaerten/docker-wallabag to eliminate the script for pers
 
 ## Usage from index.docker.io
 
-    ID=$(sudo docker run -p 7070:80 -d zuhkov/wallabag:latest /sbin/my_init)
+    ID=$(sudo docker run -p 7070:80 -d codeslave/wallabag:latest /sbin/my_init)
 
 Then head your browser to http://localhost:7070 and enjoy a fresh wallabag install.
 
@@ -22,7 +22,7 @@ Check the [phusion/baseimage](https://github.com/phusion/baseimage-docker) docum
 
 Persistence is accomplished with a Volume containing the folder with the sqlite database and a Volume for the PHP config file.
 
-    docker run -p 7070:80/tcp -d -v /where/you/want/to/store/db:/var/www/wallabag/db -v /where/you/want/to/store/config:/config zuhkov/wallabag /sbin/my_init
+    docker run -p 7070:80/tcp -d -v /where/you/want/to/store/db:/var/www/wallabag/db -v /where/you/want/to/store/config:/config codeslave/wallabag /sbin/my_init
 
 ## Using ENV variable to pass SALT value in config file
 
@@ -35,10 +35,13 @@ NOTE: This option should not be used until an update is made to the sqlite datab
 
 ## building from Dockerfile
 
-    sudo docker build -t zuhkov/wallabag .
+    sudo docker build -t codeslave/wallabag .
 
 # Credits
 
 wallabag is an open source project created by @nicosomb
 
 This docker image is built upon the baseimage made by phusion and forked from bobmaerten/docker-wallabag
+
+Based on original work by Zuhkov <zuhkov@gmail.com> to get running in UnRaid
+Current MAINTAINER  CodeSlave <codeslave@gmail.com>
