@@ -26,7 +26,7 @@
     <Data>
         <Volume>
             <HostDir>/mnt/user/appdata/wallabag/data</HostDir>
-            <ContainerDir>/var/www/wallabag/data/data</ContainerDir>
+            <ContainerDir>/var/www/wallabag/data</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
         <Volume>
